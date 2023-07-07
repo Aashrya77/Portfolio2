@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 6rem 2rem 0rem 4rem;
+}
+
+.Home{
+    display: flex;
+    height: 25rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.head{
+    font-weight: bold;
+    font-size: 35px;
+    width: fit-content;
+}
+
+.sub-head{
+    font-size: 30px;
+    font: bolder;
+    color: cornflowerblue;
+    margin-bottom: 20px;
+}
+
+.header>p{
+    width:35rem;
+}
+
+.btn button{
+    margin-top: 30px;
+    box-shadow: rgba(52, 52, 218, 1) 3px 7px 30px 7px;
+    cursor: pointer;
+}
+
+.right>img{
+    position: absolute;
+    width: 19rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 3rem;
+    top: -1rem;
+}
+
+.right{
+    flex: 1;
+    position: relative;
+}
+
+.right>:nth-child(1){
+    position: absolute;
+    width: 19rem;
+    height: 20rem;
+    border: 2px solid cornflowerblue;
+    background-color: transparent;
+    right: 4.5rem;
+    top: -2.3rem;
+}
+
+.right>:nth-child(2){
+    position: absolute;
+    width: 19rem;
+    height: 20rem;
+    top: 0.2rem;
+    background-color: navy;
+    right: 1.5rem;
+}
+
+.socials{
+    display: flex;
+    gap: 1.3rem;
+    font-size: 30px;
+}
+
+.socials a{
+    text-decoration: none;
+  font-size: 30px;
+  color: #ababab;
+  transition: transform 0.5s;
+}
+
+.socials a:hover{
+    color: cornflowerblue;
+  transform: translateY(-5px);
+}
+
+.cursor{
+    color: cornflowerblue;
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    .Home{
+        flex-direction: column;
+    }
+    .head{
+        font-size: 25px;
+    }
+
+    .sub-head{
+        font-size: 16px;
+    }
+    main{
+        padding: 3rem 3rem 0rem 0.8rem;
+    }
+    .header>p{
+        width: 16rem;
+        font-size: small;
+    }
+    .right>img{
+        width: 5.5rem;
+        height: 5.5rem;
+        object-fit: cover;
+        right: -1rem;
+        top: -2rem;
+        border-radius: 50%;
+    }
+    .right>:nth-child(1){
+        width: 5.5rem;
+        right: -0.6rem;
+        top: -2.3rem;
+        height: 5.5rem;
+        border-radius: 50%;
+    }
+    .right>:nth-child(2){
+        width: 5.5rem;
+        right: -1.5rem;
+        top: -1.6rem;
+        height: 5.5rem;
+        border-radius: 50%;
+    }
+    .btn button{
+        font-size: 12px;
+    }
+    .Home{
+        height: 20rem;
+    }
+    .socials a{
+        font-size: 25px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .head{
+        font-size: 27px;
+    }
+    .sub-head{
+        font-size: 22px;
+    }
+    .header>p{
+        width: 20rem;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 1025px){
+    main{
+        padding: 6rem 1rem 2rem 1.2rem;
+    }
+    .right>img{
+        width: 10rem;
+        height: 10rem;
+        right: 1.5rem;
+        object-fit: cover;
+        top: -2rem;
+    }
+    .right>:nth-child(1){
+        width: 9.5rem;
+        right: 2.6rem;
+        top: -2.7rem;
+        height: 9.5rem;
+    }
+    .right>:nth-child(2){
+        width: 9.5rem;
+        top: -0.7rem;
+        right: 0.6rem;
+        height: 9.5rem;
+    }
+}

@@ -1,0 +1,67 @@
+.services {
+  margin-top: 50px;
+}
+
+.code {
+  color: cornflowerblue;
+  font-size: 50px;
+}
+
+.service-head{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.service-container {
+  display: flex;
+  padding: 0 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  gap: 1.5rem;
+}
+
+.service {
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(7, 25, 56);
+  padding: 40px;
+  box-shadow: rgba(62, 62, 116, 0.411) 0px 30px 60px -12px inset,
+    rgba(14, 12, 129, 0.3) 0px 18px 36px -18px inset;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.service p{
+  margin-top: 12px;
+}
+
+.service:hover {
+  background-color: rgba(63, 114, 218, 0.493);
+  transform: translateY(-10px);
+}
+
+.hire-btn{
+  display: block;
+  margin: 40px auto;
+  box-shadow: rgba(52, 52, 218, 1) 3px 7px 30px 7px;
+  cursor: pointer;
+  padding: 10px 40px;
+}
+@media only screen and (max-width: 768px) {
+  .service p {
+    font-size: small;
+  }
+
+  .service{
+    padding: 25px;
+    height: unset;
+  }
+  .service-container{
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}

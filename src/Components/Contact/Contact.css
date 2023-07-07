@@ -1,0 +1,123 @@
+.Contact {
+  display: flex;
+  justify-content: space-evenly;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    3deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 38%,
+    rgba(1, 148, 177, 1) 100%
+  );
+  padding: 40px;
+  box-shadow: rgba(97, 97, 196, 0.733) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  gap: 8rem;
+}
+
+.heading-contact {
+  margin: 20px 0;
+}
+
+.heading-contact span {
+  color: cornflowerblue;
+  margin: 0;
+}
+
+.heading-contact > p {
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.contact-b {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: rgb(9, 32, 71);
+  box-shadow: rgba(62, 62, 116, 0.411) 0px 30px 60px -12px inset,
+    rgba(14, 12, 129, 0.3) 0px 18px 36px -18px inset;
+  width: 28rem;
+  max-width: 40rem;
+  padding: 25px 25px 15px 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.form > input {
+  color: white;
+  background: transparent;
+  border: 2px solid #256d85;
+  padding: 8px;
+  border-radius: 6px;
+  outline: none;
+  margin: 6px 0;
+  font-size: large;
+  width: 95%;
+}
+
+textarea {
+  background: transparent;
+  border: 2px solid #256d85;
+  border-radius: 4px;
+  padding: 8px;
+  color: white;
+  outline: none;
+  margin: 6px 0;
+  font-size: large;
+  min-height: 8rem;
+  max-width: 95%;
+}
+
+.sub-btn {
+  display: block;
+  margin: 8px auto;
+  width: 9rem;
+  cursor: pointer;
+}
+
+.contact-left {
+  margin-top: 25px;
+}
+
+.contact-icon {
+  font-size: x-large;
+  color: cornflowerblue;
+}
+
+.other-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.other-contacts p {
+  font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  #Contact {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 20px;
+  }
+  .contact-b{
+    width: unset;
+}
+  textarea {
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+    #Contact{
+        gap: 2.5rem;
+    }    
+    .other-contacts p{
+        font-size: 16px;
+    }
+}
